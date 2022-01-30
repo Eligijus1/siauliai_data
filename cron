@@ -1,0 +1,3 @@
+# Download data from siauliai.lt every day 16:30
+30 16 * * * /home/elyga/Tools/downloads_from_siauliai_lt/siauliai_data/download.sh > /dev/null 2>> /dev/null
+
