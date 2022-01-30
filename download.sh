@@ -23,7 +23,7 @@ filesLocation="/home/elyga/Tools/downloads_from_siauliai_lt/siauliai_data"
 currentDay=$(date +%Y-%m-%d)
 
 fileNameMeroDienotvarke="$currentDay"_mero_dienotvarke.html
-fileNameMeroPavaduotojo1Darbotvarke="$currentDayi"_mero_pavaduotojo_1_darbotvarke.html
+fileNameMeroPavaduotojo1Darbotvarke="$currentDay"_mero_pavaduotojo_1_darbotvarke.html
 fileNameMeroPavaduotojo2Darbotvarke="$currentDay"_mero_pavaduotojo_2_darbotvarke.html
 fileNameAdministracijosDirektoriausDarbotvarke="$currentDay"_administracijos_direktoriaus_darbotvarke.html
 fileNameAdministracijosDirektoriausPavaduotojo1Darbotvarke="$currentDay"_administracijos_direktoriaus_pavaduotojo_1_darbotvarke.html
