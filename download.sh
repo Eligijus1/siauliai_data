@@ -22,12 +22,12 @@ sed -i 's/\/static\/manifest\/favicon-16x16.png/resources\/favicon-16x16.png/' "
 filesLocation="/home/elyga/Tools/downloads_from_siauliai_lt/siauliai_data"
 currentDay=$(date +%Y-%m-%d)
 
-fileNameMeroDienotvarke="$currentDay_mero_dienotvarke.html"
-fileNameMeroPavaduotojo1Darbotvarke="$currentDay_mero_pavaduotojo_1_darbotvarke.html"
-fileNameMeroPavaduotojo2Darbotvarke="$currentDay_mero_pavaduotojo_2_darbotvarke.html"
-fileNameAdministracijosDirektoriausDarbotvarke="$currentDay_administracijos_direktoriaus_darbotvarke.html"
-fileNameAdministracijosDirektoriausPavaduotojo1Darbotvarke="$currentDay_administracijos_direktoriaus_pavaduotojo_1_darbotvarke.html"
-fileNameAdministracijosDirektoriausPavaduotojo2Darbotvarke="$currentDay_administracijos_direktoriaus_pavaduotojo_2_darbotvarke.html"
+fileNameMeroDienotvarke="$currentDay"_mero_dienotvarke.html
+fileNameMeroPavaduotojo1Darbotvarke="$currentDayi"_mero_pavaduotojo_1_darbotvarke.html
+fileNameMeroPavaduotojo2Darbotvarke="$currentDay"_mero_pavaduotojo_2_darbotvarke.html
+fileNameAdministracijosDirektoriausDarbotvarke="$currentDay"_administracijos_direktoriaus_darbotvarke.html
+fileNameAdministracijosDirektoriausPavaduotojo1Darbotvarke="$currentDay"_administracijos_direktoriaus_pavaduotojo_1_darbotvarke.html
+fileNameAdministracijosDirektoriausPavaduotojo2Darbotvarke="$currentDay"_administracijos_direktoriaus_pavaduotojo_2_darbotvarke.html
 
 wget -O "$filesLocation/$fileNameMeroDienotvarke" https://www.siauliai.lt/lt/agenda/view/mero-dienotvarke
 wget -O "$filesLocation/$fileNameMeroPavaduotojo1Darbotvarke" https://www.siauliai.lt/lt/agenda/view/mero-pavaduotojos-darbotvarke
