@@ -2,7 +2,9 @@
 
 filesLocation="/home/elyga/Tools/downloads_from_siauliai_lt/siauliai_data"
 currentDay=$(date +%Y-%m-%d)
+
 fileNameMeroDienotvarke="mero_dienotvarke_$currentDay.html"
+fileNameMeroPavaduotojo1Darbotvarke="mero_pavaduotojo_1_darbotvarke_$currentDay.html"
 
 wget -O "$filesLocation/$fileNameMeroDienotvarke" https://www.siauliai.lt/lt/agenda/view/mero-dienotvarke
 
@@ -30,6 +32,6 @@ sed -i 's/\/static\/manifest\/favicon-32x32.png/resources\/favicon-32x32.png/' "
 sed -i 's/\/static\/manifest\/favicon-16x16.png/resources\/favicon-16x16.png/' "$fileNameMeroDienotvarke"
 
 git add .
-git commit -a -m "Day $currentDay data."
+git commit -a -m "Day $currentDay data updated."
 git push origin main
 
