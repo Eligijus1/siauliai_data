@@ -23,13 +23,16 @@
 
     const init = () => {
         loadJSON((response) => {
-            // 3. parse JSON string into JSON Object
-            console.log('response =', response);
             const json = JSON.parse(response);
-            console.log('your local JSON =', JSON.stringify(json, null, 4));
-            // 4. render to your page
             const app = document.querySelector('#app');
-            app.innerHTML = `<pre>${JSON.stringify(json, null, 4)}</pre>`;
+            let html = '<p>';
+            for (const [key, value] of Object.entries(json)) {
+                console.log(`${key}: ${value}`);
+                html += `<a href="${value}" target="_blank" rel="noopener noreferrer">${value}</a>`;
+            }
+            html += '<p>';
+            //app.innerHTML = `<pre>${JSON.stringify(json, null, 4)}</pre>`;
+            app.innerHTML = html;
         });
     }
     init();
