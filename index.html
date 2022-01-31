@@ -27,8 +27,8 @@
             const app = document.querySelector('#app');
             let html = '<p>';
             for (const [key, value] of Object.entries(json)) {
-                console.log(`${key}: ${value}`);
-                html += `<a href="${value}" target="_blank" rel="noopener noreferrer">${value}</a>`;
+                //console.log(`${key}: ${value}`);
+                html += `<a href="${value}" target="_blank" rel="noopener noreferrer">${value}</a><br>`;
             }
             html += '<p>';
             //app.innerHTML = `<pre>${JSON.stringify(json, null, 4)}</pre>`;
