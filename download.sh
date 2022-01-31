@@ -49,6 +49,8 @@ fixFileHtmlPats "$fileNameAdministracijosDirektoriausDarbotvarke"
 fixFileHtmlPats "$fileNameAdministracijosDirektoriausPavaduotojo1Darbotvarke"
 fixFileHtmlPats "$fileNameAdministracijosDirektoriausPavaduotojo2Darbotvarke"
 
+ls -I README.md -I cron -I index.html -I download.sh -I resources -I data_index.json | jq -R -s -c 'split("\n")[:-1]' > data_index.json
+
 git add .
 git commit -a -m "Day $currentDay data updated."
 git push origin main

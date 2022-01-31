@@ -1,13 +1,37 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML>
-	<HEAD>
-		<TITLE>Test</TITLE>
-	</HEAD>
-	<BODY>
-		Line 1
-		<br style="line-height:500;">
-		Line 2
-		<br />
-		Line 3
-	</BODY>
+<HEAD>
+    <TITLE>Test</TITLE>
+</HEAD>
+<BODY>
+<section id="app">
+    loading...
+</section>
+</BODY>
+<script>
+    const loadJSON = (callback) => {
+        const xObj = new XMLHttpRequest();
+        xObj.overrideMimeType("application/json");
+        xObj.open('GET', 'data_index.json', true);
+        xObj.onreadystatechange = () => {
+            if (xObj.readyState === 4 && xObj.status === 200) {
+                callback(xObj.responseText);
+            }
+        };
+        xObj.send(null);
+    }
+
+    const init = () => {
+        loadJSON((response) => {
+            // 3. parse JSON string into JSON Object
+            console.log('response =', response);
+            const json = JSON.parse(response);
+            console.log('your local JSON =', JSON.stringify(json, null, 4));
+            // 4. render to your page
+            const app = document.querySelector('#app');
+            app.innerHTML = `<pre>${JSON.stringify(json, null, 4)}</pre>`;
+        });
+    }
+    init();
+</script>
 </HTML>
