@@ -1,5 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <HEAD>
     <TITLE>Test</TITLE>
 </HEAD>
@@ -26,12 +26,15 @@
             const json = JSON.parse(response);
             const app = document.querySelector('#app');
             let html = '<p>';
+            let fileNameNotExtension = '';
+            let fileCaption = '';
             for (const [key, value] of Object.entries(json)) {
-                //console.log(`${key}: ${value}`);
-                html += `<a href="${value}" target="_blank" rel="noopener noreferrer">${value}</a><br>`;
+                fileNameNotExtension = `${value}`.split('.').slice(0, -1).join('.');
+                fileCaption = fileNameNotExtension.replaceAll('_', ' ');
+                fileCaption = fileCaption.replaceAll('darbotvarke', 'darbotvarkė');
+                html += `<a href="${value}" target="_blank" rel="noopener noreferrer">${fileCaption}</a><br>`;
             }
             html += '<p>';
-            //app.innerHTML = `<pre>${JSON.stringify(json, null, 4)}</pre>`;
             app.innerHTML = html;
         });
     }
