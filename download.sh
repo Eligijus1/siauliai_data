@@ -1,5 +1,8 @@
 #!/bin/sh
 
+d=`date +%Y.%m.%d_%H-%M-%S`
+echo "------------------------- BEGIN $d -----------------------------"
+
 fixFileHtmlPats () {
 sed -i 's/\/dist\/siauliai.min.css/resources\/siauliai.min.css/' "$1"
 sed -i 's/\/dist\/moment.min.js/resources\/moment.min.js/' "$1"
@@ -49,7 +52,7 @@ fixFileHtmlPats "$fileNameAdministracijosDirektoriausDarbotvarke"
 fixFileHtmlPats "$fileNameAdministracijosDirektoriausPavaduotojo1Darbotvarke"
 fixFileHtmlPats "$fileNameAdministracijosDirektoriausPavaduotojo2Darbotvarke"
 
-ls -I .idea -I .gitignore -I README.md -I cron -I index.html -I download.sh -I resources -I data_index.json | jq -R -s -c 'split("\n")[:-1]' > data_index.json
+ls -I download.log -I .idea -I .gitignore -I README.md -I cron -I index.html -I download.sh -I resources -I data_index.json | jq -R -s -c 'split("\n")[:-1]' > data_index.json
 
 git add .
 git commit -a -m "Day $currentDay data updated."
