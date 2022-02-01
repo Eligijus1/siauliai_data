@@ -32,6 +32,7 @@
                 fileNameNotExtension = `${value}`.split('.').slice(0, -1).join('.');
                 fileCaption = fileNameNotExtension.replaceAll('_', ' ');
                 fileCaption = fileCaption.replaceAll('darbotvarke', 'darbotvarkė');
+                fileCaption = fileCaption.replaceAll('dienotvarke', 'dienotvarkė');
                 html += `<a href="${value}" target="_blank" rel="noopener noreferrer">${fileCaption}</a><br>`;
             }
             html += '<p>';
