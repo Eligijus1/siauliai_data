@@ -104,8 +104,6 @@ const loadJSON = (callback) => {
 const init = () => {
     loadJSON((response) => {
         const json = JSON.parse(response);
-        const app = document.querySelector('#app1');
-        let html = '<p>';
         let splitValue = [];
         let dateTime = '';
         let fileCaption = '';
@@ -120,8 +118,6 @@ const init = () => {
             fileCaption = fileCaption.charAt(0).toUpperCase() + fileCaption.slice(1);
             vueFramework.addItem(dateTime, fileCaption, value);
         }
-        html += '<p>';
-        app.innerHTML = html;
     });
 }
 
