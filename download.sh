@@ -52,7 +52,7 @@ fixFileHtmlPats "$fileNameAdministracijosDirektoriausDarbotvarke"
 fixFileHtmlPats "$fileNameAdministracijosDirektoriausPavaduotojo1Darbotvarke"
 fixFileHtmlPats "$fileNameAdministracijosDirektoriausPavaduotojo2Darbotvarke"
 
-ls -I download.log -I .idea -I .gitignore -I README.md -I cron -I index.html -I download.sh -I resources -I data_index.json | jq -R -s -c 'split("\n")[:-1]' > data_index.json
+ls -I webfonts -I js -I css -I download.log -I .idea -I .gitignore -I README.md -I cron -I index.html -I download.sh -I resources -I data_index.json | jq -R -s -c 'split("\n")[:-1]' > data_index.json
 
 git add .
 git commit -a -m "Day $currentDay data updated."
