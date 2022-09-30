@@ -11,20 +11,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <link rel="apple-touch-icon" sizes="180x180" href="/static/manifest/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="resources/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="resources/favicon-16x16.png">
-<link rel="manifest" href="resources/manifest.json">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/manifest/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/manifest/favicon-16x16.png">
+<link rel="manifest" href="/static/manifest/manifest.json">
 <link rel="mask-icon" href="/static/manifest/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="icon" type="image/x-icon" href="resources/favicon.ico">
-<link rel="shortcut icon" type="image/x-icon" href="resources/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/static/manifest/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="/static/manifest/favicon.ico">
 <meta name="msapplication-TileColor" content="#b91d47">
 <meta name="msapplication-config" content="/static/manifest/browserconfig.xml">
 <meta name="theme-color" content="#FDAB01">
 <meta property="og:title" content="Šiaulių miesto savivaldybė">
-<meta property="og:image" content="resources/logo.png">
+<meta property="og:image" content="/static/img/siauliai/logo.png">
 <meta property="og:url" content="http://www.siauliai.lt">
 <meta property="og:description" content="Šiaulių miesto savivaldybė">
-<meta property="og:site_name" content="siauliai.lt">	<link rel="stylesheet" href="resources/siauliai.min.css?v=1655979723">	 <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-85910726-1"></script><script> window.dataLayer = window.dataLayer || []; function gtag(){ dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-85910726-1'); </script><script>var params = {production:true,url:'web',zone:'',mysql:true, 'google-key': 'AIzaSyDKeTtwpcawcoECtkRbB6_vNVsLJ0PJHeQ'},role = {developer:false,tester:false,admin:false,master:false},web = {lineage:'/agenda/view',lineage_current:'/lt/agenda/view/administracijos-direktoriaus-pavaduotojo-darbotvarke',zone: '',browser:'wget',lang:'lt',theme:'bootstrap',get:{}},user = {id:undefined,name:''},pk = undefined,locale = '';</script><script src="resources/moment.min.js?v=1654596998"></script><script src="resources/vendor.min.js?v=1654596998"></script><script src="resources/core.min.js?v=1664201735"></script><script src="resources/app.min.js?v=1658918189"></script><link rel="stylesheet" href="/dist/datatables/jquery.dataTables.min.css?v=1654596998" /><script src="/dist/datatables/datatables.min.js?v=1654596998"></script> <script src="https://www.google.com/recaptcha/api.js?render=6Lfv4vIfAAAAACZ2MxakQN9AmjDhjQw0jRdW01Uu&badge=bottomleft"></script> <script> /* * @param form - form element where recaptcha is used */ async function googleRecaptchaV3BeforeSubmit(form) { if(form){ let promise = new Promise((res, rej)=>{ grecaptcha.ready(function() { grecaptcha.execute("6Lfv4vIfAAAAACZ2MxakQN9AmjDhjQw0jRdW01Uu", { action: 'submit' }).then(function(token) { setGoogleRecaptchaResponseInput(form, token); res("Succesful google recaptcha response"); }); }); }); return await promise; } } /* * set form input for google recaptcha response */ function setGoogleRecaptchaResponseInput(form, token){ let existingInput = form.querySelector("input[name='g_recaptcha_response']"); if(existingInput){ existingInput.value = token; }else{ let newInput = document.createElement("input"); newInput.setAttribute("type", "hidden"); newInput.setAttribute("name", "g_recaptcha_response"); newInput.setAttribute("value", token); form.appendChild(newInput); } } </script> </head>
+<meta property="og:site_name" content="siauliai.lt">	<link rel="stylesheet" href="/dist/siauliai.min.css?v=1655979723">	 <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-85910726-1"></script><script> window.dataLayer = window.dataLayer || []; function gtag(){ dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-85910726-1'); </script><script>var params = {production:true,url:'web',zone:'',mysql:true, 'google-key': 'AIzaSyDKeTtwpcawcoECtkRbB6_vNVsLJ0PJHeQ'},role = {developer:false,tester:false,admin:false,master:false},web = {lineage:'/agenda/view',lineage_current:'/lt/agenda/view/administracijos-direktoriaus-pavaduotojo-darbotvarke',zone: '',browser:'wget',lang:'lt',theme:'bootstrap',get:{}},user = {id:undefined,name:''},pk = undefined,locale = '';</script><script src="/dist/moment.min.js?v=1654596998"></script><script src="/dist/vendor.min.js?v=1654596998"></script><script src="/dist/core.min.js?v=1664201735"></script><script src="/dist/app.min.js?v=1658918189"></script><link rel="stylesheet" href="/dist/datatables/jquery.dataTables.min.css?v=1654596998" /><script src="/dist/datatables/datatables.min.js?v=1654596998"></script> <script src="https://www.google.com/recaptcha/api.js?render=6Lfv4vIfAAAAACZ2MxakQN9AmjDhjQw0jRdW01Uu&badge=bottomleft"></script> <script> /* * @param form - form element where recaptcha is used */ async function googleRecaptchaV3BeforeSubmit(form) { if(form){ let promise = new Promise((res, rej)=>{ grecaptcha.ready(function() { grecaptcha.execute("6Lfv4vIfAAAAACZ2MxakQN9AmjDhjQw0jRdW01Uu", { action: 'submit' }).then(function(token) { setGoogleRecaptchaResponseInput(form, token); res("Succesful google recaptcha response"); }); }); }); return await promise; } } /* * set form input for google recaptcha response */ function setGoogleRecaptchaResponseInput(form, token){ let existingInput = form.querySelector("input[name='g_recaptcha_response']"); if(existingInput){ existingInput.value = token; }else{ let newInput = document.createElement("input"); newInput.setAttribute("type", "hidden"); newInput.setAttribute("name", "g_recaptcha_response"); newInput.setAttribute("value", token); form.appendChild(newInput); } } </script> </head>
 <body>
 <div class="layout noAnimation">
 	<div class="layout-top">
@@ -121,7 +121,7 @@
 		<div class="container top-dark-container">
 			<div class="top-dark-container-left">
 				<a class="logo logo-aTag" href="/lt" data-tooltip="Pagrindinis">
-	<img src="resources/logo.png" alt="Šiauliai">
+	<img src="/static/img/siauliai/logo.png" alt="Šiauliai">
 </a>
 			</div>
 			<div class="top-dark-container-right">
@@ -231,7 +231,7 @@
 	Pantera.custom.disabledCollapse();
 </script>	</div>
 	<div id="content-wrap">
-		<img class="bg-city" src="resources/city.png" alt="background">
+		<img class="bg-city" src="/static/img/siauliai/city.png" alt="background">
 		<div id="content">
 			<div class="container">
 				<div class="breadcrumbs">
@@ -355,7 +355,7 @@
 			<div class="row bottom-dark-row">
 				<div class="col-auto">
 					<a class="logo logo-aTag" href="javascript:;">
-	<img src="resources/logo.png" alt="Šiauliai">
+	<img src="/static/img/siauliai/logo.png" alt="Šiauliai">
 </a>
 				</div>
 				<div class="col-lg-6">
@@ -382,8 +382,9 @@
 					<div class="last-footer-col-title">
 						Šiaulių miesto savivaldybės administracija Juridinių asmenų registras, kodas 188771865					</div>
 					<div class="contact-list">
-						<p>Vasario 16-osios g. 62, LT-76295 Šiauliai <br />Tel. <a href="tel:1863">1863</a>, <a href="tel:+37041-509-490">+370 41 509 490</a>, <br />faks. <a href="tel:+37041-524-115">+370 41 524 115</a><br />el. p. <span class="text-primary"><script type="text/javascript">eval(unescape('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%22%6d%61%69%6c%74%6f%3a%69%6e%66%6f%40%73%69%61%75%6c%69%61%69%2e%6c%74%22%20%74%61%72%67%65%74%3d%22%5f%62%6c%61%6e%6b%22%20%72%65%6c%3d%22%6e%6f%6f%70%65%6e%65%72%22%20%3e%69%6e%66%6f%40%73%69%61%75%6c%69%61%69%2e%6c%74%3c%2f%61%3e%27%29%3b'))</script><br /><a href="https://www.facebook.com/SiauliuMiestoSavivaldybe" title="https://www.facebook.com/SiauliuMiestoSavivaldybe" target="_blank" rel="noopener">https://www.facebook.com/SiauliuMiestoSavivaldybe</a><br /></span><a href="https://www.instagram.com/siauliai_official/" target="_blank" rel="noopener">https://www.instagram.com/siauliai_official/</a></p>
+						<p>Vasario 16-osios g. 62, LT-76295 Šiauliai <br />Tel. <a href="tel:1863">1863</a>, <a href="tel:+37041-509-490">+370 41 509 490</a>, <br />faks. <a href="tel:+37041-524-115">+370 41 524 115</a><br />el. p. <span class="text-primary"><script type="text/javascript">eval(unescape('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%22%6d%61%69%6c%74%6f%3a%69%6e%66%6f%40%73%69%61%75%6c%69%61%69%2e%6c%74%22%20%74%61%72%67%65%74%3d%22%5f%62%6c%61%6e%6b%22%20%72%65%6c%3d%22%6e%6f%6f%70%65%6e%65%72%22%20%3e%69%6e%66%6f%40%73%69%61%75%6c%69%61%69%2e%6c%74%3c%2f%61%3e%27%29%3b'))</script><br /><a href="https://www.facebook.com/SiauliuMiestoSavivaldybe" title="https://www.facebook.com/SiauliuMiestoSavivaldybe" target="_blank" rel="noopener">https://www.facebook.com/SiauliuMiestoSavivaldybe</a><br /></span><a href="https://www.instagram.com/siauliai_official/" target="_blank" rel="noopener">https://www.instagram.com/siauliai_official/</a><br /><a href="https://www.linkedin.com/company/10240818">https://www.linkedin.com/company/10240818</a></p>
 <p>PASITIKĖJIMO TELEFONAS <a href="tel:+37041-201-131">+370 41 596 202</a></p>
+<div id="leifolkicnjbbkajlfmhackhfmijcecc" style="display: none;"></div>
 <div id="leifolkicnjbbkajlfmhackhfmijcecc" style="display: none;"></div>					</div>
 				</div>
 			</div>
