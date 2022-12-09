@@ -22,7 +22,7 @@ sed -i 's/\/static\/manifest\/favicon-32x32.png/resources\/favicon-32x32.png/' "
 sed -i 's/\/static\/manifest\/favicon-16x16.png/resources\/favicon-16x16.png/' "$1"
 }
 
-filesLocation="/home/elyga/Tools/downloads_from_siauliai_lt/siauliai_data"
+filesLocation="/home/ubuntu/siauliai_data"
 currentDay=$(date +%Y-%m-%d)
 
 fileNameMeroDienotvarke="$currentDay"_mero_dienotvarke.html
